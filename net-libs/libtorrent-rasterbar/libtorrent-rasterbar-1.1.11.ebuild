@@ -66,6 +66,7 @@ src_configure() {
 		$(use_enable static-libs static)
 		$(use_enable test tests)
 		--with-libiconv
+		--with-boost=${EPREFIX}/usr/$(get_libdir)
 		--with-boost-libdir=${EPREFIX}/usr/$(get_libdir)
 	)
 	econf "${myeconfargs[@]}"
