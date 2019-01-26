@@ -50,6 +50,7 @@ src_configure() {
 	$(use_enable debug) \
 	$(use_enable webui) \
 	$(use_enable X gui) \
+	--with-boost=${EPREFIX}/usr/$(get_libdir) \
 	--with-boost-libdir=${EPREFIX}/usr/$(get_libdir)
 }
 
